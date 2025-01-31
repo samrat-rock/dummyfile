@@ -22,5 +22,23 @@ body {
 
 .img{
   border-radius:15px 50px 30px;
-  height: 100px;
+  height: 200px;
+  width: 150px;
+}
+
+.btn{
+  background: rgba(65, 65, 221, 0.722)
+  ;
+  padding: 10px;
+margin: 10px;
+}
+
+.bor{
+  border-radius: 20px 60px;
+  width: 400px;
+}
+
+
+.bg{
+  background: rgba(128, 128, 128, 0.385);
 }
