@@ -93,7 +93,7 @@ export default function JobCategories() {
           {jobCategories.map((category) => (
             <div
               key={category.id}
-              className="bg-white p-6 rounded-lg shadow-md flex items-center gap-4 border-4 border-gray-600"
+              className="bg-white p-1 rounded-lg shadow-md flex items-center gap-4 border-4 border-gray-600"
             >
               <img
                 src={category.image}
