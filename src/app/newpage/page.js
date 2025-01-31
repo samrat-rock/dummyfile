@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Page() {
@@ -24,6 +25,9 @@ function Page() {
             <p className="bg rounded-lg p-1">#winter</p>
         </div>
       </div>
+   <div className="flex justify-center">
+   <Link href='/' > <button className="bg-slate-800 p-1 text-white font-bold">Back</button></Link>
+    </div>  
     </div>
   );
 }
