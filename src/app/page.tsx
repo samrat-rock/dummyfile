@@ -111,7 +111,7 @@ export default function JobCategories() {
               </div>
 
               <div className="pt-3 pb-3 px-3 text-center flex flex-col flex-1">
-                <div className="text-lg font-bold">{item.name}</div>
+                <div className="text-lg font-bold text-left">{item.name}</div>
                 <p className="text-sm text-left text-gray-600 font-poppins">{item.description}</p>
               </div>
             </div>
