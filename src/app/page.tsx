@@ -50,7 +50,7 @@ export default function JobCategories() {
     {
       id: 6,
       image:
-        "https://img.freepik.com/free-photo/hotel-receptionist-welcoming-guests_23-2149381068.jpg",
+        "https://qtxasset.com/quartz/qcloud1/media/image/2016-05/hotel-staff.jpg?VersionId=Vzk8oKyP3_euUBt83rNM.ixVNZSjc5NA",
       name: "Hospitality",
       roles: [
         "Hotel Staff, Receptionist, Housekeeping, Chef",
