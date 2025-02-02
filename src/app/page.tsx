@@ -106,14 +106,14 @@ export default function JobCategories() {
               key={index}
               className="border-2 rounded-lg shadow-md overflow-hidden flex flex-col w-[250px] h-[auto] mx-auto mb-[20px] transition-transform transform hover:scale-105 hover:shadow-lg"
             >
-              <div className="p-2 bg-gray-400 text-center text-lg font-bold">{item.name}</div>
-
               <div className="relative">
                 <img className="w-full h-[200px] object-cover" src={item.image} alt={item.name} />
               </div>
 
               <div className="pt-3 pb-3 px-3 text-center flex flex-col flex-1">
-                <p className="font-serif text-sm text-left text-gray-600">{item.description}</p>
+                <div className="text-lg font-bold">{item.name}</div>
+                <h3 className="text-md font-semibold text-left mt-2">Description:</h3>
+                <p className="text-sm text-left text-gray-600 font-poppins">{item.description}</p>
               </div>
             </div>
           ))}
