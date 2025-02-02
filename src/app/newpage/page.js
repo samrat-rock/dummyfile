@@ -19,15 +19,17 @@ const data = [
     },
   ];
 
-
  function Page() {
     return (
       <div className="container mx-auto mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-[1400px] font-poppins">
         {data.concat(data).map((item, index) => (
-          <div key={index} className="border-2 rounded-lg shadow-lg overflow-hidden flex flex-col">
+          <div 
+            key={index} 
+            className="border-2 rounded-lg shadow-lg overflow-hidden flex flex-col transform transition duration-300 hover:scale-105"
+          >
             <div className="relative pt-[200px]">
               <img 
-                className="absolute top-0 left-0 w-full h-full object-cover" 
+                className="absolute top-0 left-0 w-full h-full object-cover transition duration-300" 
                 src={item.image} 
                 alt={item.title} 
               />
@@ -39,7 +41,6 @@ const data = [
               <p className="text-left text-sm mb-4">
                 {item.description}
               </p>
-              
             </div>
           </div>
         ))}
