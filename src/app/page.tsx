@@ -100,11 +100,11 @@ export default function JobCategories() {
           Available sectors include security, construction, carpentry, masonry, machine operations, and hospitality,
           offering diverse job <br /> opportunities in skilled labor and service industries.
         </p>
-        <div className="container mx-auto mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-[1050px] font-poppins">
+        <div className="container mx-auto mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-[1300px] font-poppins">
           {jobCategories.map((item, index) => (
             <div
               key={index}
-              className="border-2 rounded-lg shadow-md overflow-hidden flex flex-col w-[250px] h-[auto] mx-auto mb-[20px] transition-transform transform hover:scale-105 hover:shadow-lg"
+              className="border-2 rounded-lg shadow-md overflow-hidden flex flex-col w-[300px] h-[auto] mx-auto mb-[20px] transition-transform transform hover:scale-105 hover:shadow-lg"
             >
               <div className="relative">
                 <img className="w-full h-[200px] object-cover" src={item.image} alt={item.name} />
@@ -112,7 +112,7 @@ export default function JobCategories() {
 
               <div className="pt-3 pb-3 px-3 text-center flex flex-col flex-1">
                 <div className="text-lg font-bold text-left">{item.name}</div>
-                <p className="text-sm text-left text-gray-600 font-poppins">{item.description}</p>
+                <p className="text-sm text-left text-gray-600 font-poppins ">{item.description}</p>
               </div>
             </div>
           ))}
