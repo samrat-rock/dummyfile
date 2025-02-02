@@ -87,7 +87,7 @@ export default function JobCategories() {
     <div>
 
       <h2 className="font-poppins text-center font-bold py-2 text-[30px]">Available Sector</h2>
-      <p className="text-center font-poppins font-bold ">Available sectors include security, construction, carpentry, masonry, machine operations, and hospitality, offering <br /> diverse job opportunities in skilled labor and service industries.</p>
+      <p className="text-center font-poppins  ">Available sectors include security, construction, carpentry, masonry, machine operations, and hospitality, offering <br /> diverse job opportunities in skilled labor and service industries.</p>
     <div className="container mx-auto mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  max-w-[1050px] font-poppins">
         
         
