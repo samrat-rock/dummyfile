@@ -112,7 +112,6 @@ export default function JobCategories() {
 
               <div className="pt-3 pb-3 px-3 text-center flex flex-col flex-1">
                 <div className="text-lg font-bold">{item.name}</div>
-                <h3 className="text-md font-semibold text-left mt-2">Description:</h3>
                 <p className="text-sm text-left text-gray-600 font-poppins">{item.description}</p>
               </div>
             </div>
