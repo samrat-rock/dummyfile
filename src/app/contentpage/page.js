@@ -14,31 +14,31 @@ const sections = [
   {
     id: 1,
     title: "PRE-SELECTION",
-    description: "The pre-selection process involves advertising in local media to inform potential applicants.",
+    description: "he pre-selection process nvoves advertsing in local mass media to inform potential appicants about the job Some applications are drawn from our existing database The pre-selection is carried out by our company management, which assesses the capabilities and competencies of individuals to ensure, they meet employer expectations.",
     icon: <CiSearch className="text-blue-500 text-3xl" />,  
   },
   {
     id: 2,
     title: "FINAL SELECTION",
-    description: "The final selection is made through a direct interview conducted by the employer.",
+    description: "general, the final selectico is made. from those lected in the preliminary stage through a drect terview conducted by the employer or ds presentative It consists of both an cral and a practical ade test Many companies authorize our agency to andle the final selection on their behalf, Sometimes, a kype interview is also conducted with the emplover",
     icon: <AiOutlineInfoCircle className="text-blue-500 text-3xl" />,  
   },
   {
     id: 3,
     title: "TRADE TEST",
-    description: "Trade test is conducted to evaluate applicants' practical skills.",
+    description: "Trade tests are conducted by a competent testing board and committee consisting of professionals, experts, and instructors at the concern’s Trade Test Centers",
     icon: <PiTrademarkRegistered className="text-blue-500 text-3xl" />,  
   },
   {
     id: 4,
     title: "MEDICAL CHECKUP",
-    description: "Medical tests ensure the candidates are fit for the job.",
+    description: "A medical board, including psychiatrists, conducts check-ups of selected candidates Candidates are sent to the doctor, hospital or clinic nominated by the embassy of the respective country, which is approved by the Nepal Government medical board as advised by the emplover, toothe examination.",
     icon: <CiMedicalCase className="text-blue-500 text-3xl" />,  
   },
   {
     id: 5,
     title: "DOCUMENTATION",
-    description: "Documentation includes visa processing and verification of credentials.",
+    description: "We assume the responsibility of accumulating the necessary documentation of medically fit candidates Required documents include passports, photographs, and related certificates to meet their job specifications. We do not merely gather documents, we also make an effort to check the authenticity of these documents to the best of our ability",
     icon: <IoIosDocument className="text-blue-500 text-3xl" />,  
   },
   {
