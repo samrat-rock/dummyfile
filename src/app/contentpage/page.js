@@ -22,7 +22,7 @@ const sections = [
   {
     id: 2,
     title: "FINAL SELECTION",
-    description: "In general, the final selection is made from those selected in the preliminary stage through ",
+    description: "In general, the final selection is made from those selected in the preliminary stage through a direct interview conduct by the employer or its representative. It consists of both  ",
     icon: <AiOutlineInfoCircle className="text-blue-500 text-3xl" />,  
   },
   {
@@ -69,7 +69,7 @@ function Page() {
             </div>
 
         
-            <div className="relative w-[200px] h-[250px] border-4 border-white rounded-3xl shadow-lg bottom-[70px] overflow-hidden mt-5 group-hover:scale-105 transition-all duration-300 ease-in-out">
+            <div className="relative w-60 h-72 border-4 border-white rounded-3xl shadow-lg bottom-[70px] overflow-hidden mt-5 group-hover:scale-105 transition-all duration-300 ease-in-out">
               <div className="w-full h-full backdrop-blur-xl bg-white/20 "></div>
             </div>
 
@@ -84,7 +84,7 @@ function Page() {
   <p className="text-sm overflow-y-auto px-2 pb-2 scrollbar-hide">
     {section.description}
   </p>
-  <div className="absolute right-2 bottom-2">
+  <div className="absolute right-1  top-44">
     <TbPlayerTrackNextFilled className="text-blue-500 text-2xl" />
   </div>
 </div>
