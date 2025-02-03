@@ -57,7 +57,7 @@ function Page() {
         <div className="border-blue-500 border-2 w-40 hidden lg:block"></div>
       </div>
 
-      <section className="flex gap-10 justify-center flex-wrap mt-10">
+      <section className="flex gap-14 justify-center flex-wrap mt-10">
         {sections.map((section) => (
           <div
             key={section.id}
