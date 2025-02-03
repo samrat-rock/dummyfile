@@ -1,6 +1,5 @@
 import { CiSearch } from "react-icons/ci";
 import { AiOutlineInfoCircle } from "react-icons/ai";  
-import { FiSettings } from "react-icons/fi";  
 import { TbPlayerTrackNextFilled } from "react-icons/tb";
 import { IoIosDocument } from "react-icons/io";
 import { CiMedicalCase } from "react-icons/ci";
