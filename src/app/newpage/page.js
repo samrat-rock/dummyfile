@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+
 
 const data = [
     {
@@ -28,7 +30,7 @@ const data = [
             className="border-2 rounded-lg shadow-lg overflow-hidden flex flex-col transform transition duration-300 hover:scale-105"
           >
             <div className="relative pt-[200px]">
-              <img 
+              <img
                 className="absolute top-0 left-0 w-full h-full object-cover transition duration-300" 
                 src={item.image} 
                 alt={item.title} 
