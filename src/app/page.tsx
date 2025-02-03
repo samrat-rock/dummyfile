@@ -122,6 +122,14 @@ export default function JobCategories() {
             <button className="btn px-4 py-2 bg-blue-500 text-white rounded-lg">NEXT PAGE</button>
           </Link>
         </div>
+
+        <div className="flex justify-center pb-4 col-span-full">
+          <Link href="/contentpage">
+            <button className="bg-slate-800 px-6 py-3 text-white font-bold rounded-lg hover:bg-slate-700 transition">
+              Forward
+            </button>
+          </Link>
+        </div>
       </div>
     </>
   );

@@ -40,3 +40,10 @@ margin: 10px;
 .bg{
   background: rgba(128, 128, 128, 0.385);
 }
+
+.ss{
+  background: rgba(255, 255, 255, 0.718);
+  backdrop-filter: blur(10px);
+  
+}
+
