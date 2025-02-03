@@ -1,70 +1,94 @@
 import { CiSearch } from "react-icons/ci";
+import { AiOutlineInfoCircle } from "react-icons/ai";  
+import { FiSettings } from "react-icons/fi";  
+import { TbPlayerTrackNextFilled } from "react-icons/tb";
+import { IoIosDocument } from "react-icons/io";
+import { CiMedicalCase } from "react-icons/ci";
+import { PiTrademarkRegistered } from "react-icons/pi";
+
+
+
+
+
 import React from "react";
 
 const sections = [
   {
     id: 1,
-    title: "OPTIONS 01",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "PRE-SELECTION",
+    description: "The-pre-selection process involves advertising in local noss media to inform potential appacants about the joo Stine applications are drawn from our existing database",
+    icon: <CiSearch className="text-blue-500 text-3xl" />,  
   },
   {
     id: 2,
-    title: "OPTIONS 02",
-    description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    title: "FINAL SELECTION",
+    description: "In general, the final selection is made from those selected in the preliminary stage through ",
+    icon: <AiOutlineInfoCircle className="text-blue-500 text-3xl" />,  
   },
   {
     id: 3,
-    title: "OPTIONS 03",
+    title: "TRADE TEST",
     description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.",
+    icon: <PiTrademarkRegistered className="text-blue-500 text-3xl" />,  
   },
   {
     id: 4,
-    title: "OPTIONS 04",
+    title: "MEDICAL CHECKUP",
     description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.",
+    icon: <CiMedicalCase className="text-blue-500 text-3xl" />,  
   },
   {
     id: 5,
-    title: "OPTIONS 05",
-    description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
+    title: "DOCUMENTATION",
+    description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui official.",
+    icon: <IoIosDocument className="text-blue-500 text-3xl" />,  
   },
 ];
 
 function Page() {
   return (
-    <div className="container mx-auto py-10 mt-10 flex flex-col items-center bg-blue-200 font-poppins">
-      {/* Title and Dividers */}
+    <div className="container mx-auto py-10 mt-10 flex flex-col items-center bg-[#D6E3EC] font-poppins">
+    
       <div className="flex items-center gap-5">
-        <div className="border-blue-500 border-2 w-40"></div>
+        <div className="border-blue-500 border-2 w-40 hidden lg:block"></div>
         <div className="text-blue-400 text-center">
           <h3 className="font-bold text-2xl">BUSINESS</h3>
           <p className="text-sm">INFOGRAPHIC</p>
         </div>
-        <div className="border-blue-500 border-2 w-40"></div>
+        <div className="border-blue-500 border-2 w-40 hidden lg:block"></div>
       </div>
 
-  
       <section className="flex gap-10 justify-center flex-wrap mt-10">
         {sections.map((section) => (
-          <div key={section.id} className="relative w-[250px] flex flex-col items-center">
-            <div className="bg-blue-500 rounded-full w-[100px] h-[100px] flex pl-[35px] py-[20px] text-white font-bold text-2xl">
+          <div
+            key={section.id}
+            className="relative w-52 flex flex-col items-center group"
+          >
+            <div className="bg-blue-500 rounded-full aspect-square w-30 flex h-28 justify-center pt-6 text-white font-bold text-2xl">
               <h3>{`0${section.id}`}</h3>
             </div>
 
+        
+            <div className="relative w-[200px] h-[250px] border-4 border-white rounded-3xl shadow-lg bottom-[70px] overflow-hidden mt-5 group-hover:scale-105 transition-all duration-300 ease-in-out">
+              <div className="w-full h-full backdrop-blur-xl bg-white/20 "></div>
+            </div>
+
           
-            <div className="relative w-[200px] h-[250px] border-4 border-white rounded-xl shadow-lg bottom-[70px] overflow-hidden mt-5">
-              <div className="w-full h-full backdrop-blur-sm bg-white/40"></div>
+            <div className="absolute top-[80px] w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center shadow-md">
+              {section.icon} 
             </div>
 
-      
-            <div className="absolute top-[60px] w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center shadow-md">
-              <CiSearch className="text-blue-500 text-3xl" />
-            </div>
+            
+            <div className="text-blue-400 text-center w-[180px] absolute top-[140px] h-[160px] flex flex-col">
+  <h3 className="text-lg font-semibold mb-2">{section.title}</h3>
+  <p className="text-sm overflow-y-auto px-2 pb-2 scrollbar-hide">
+    {section.description}
+  </p>
+  <div className="absolute right-2 bottom-2">
+    <TbPlayerTrackNextFilled className="text-blue-500 text-2xl" />
+  </div>
+</div>
 
-
-            <div className="text-blue-400 text-center max-w-[180px]  relative bottom-[250px] mt-5">
-              <h3 className="text-lg font-semibold">{section.title}</h3>
-              <p className="text-sm">{section.description}</p>
-            </div>
           </div>
         ))}
       </section>

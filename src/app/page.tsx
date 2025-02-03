@@ -5,7 +5,7 @@ export default function JobCategories() {
     {
       id: 1,
       image:
-        "https://img.freepik.com/free-photo/medium-shot-security-officer-posing-studio_23-2150275721.jpg",
+        "https://emiratiguard.com/wp-content/uploads/2024/03/Guard-security-UAE.jpg",
       name: "Security",
       description:
         "Security professionals ensure safety in various environments, overseeing safety measures and protecting individuals from harm. Attention to detail and emergency handling are key."
@@ -13,7 +13,7 @@ export default function JobCategories() {
     {
       id: 2,
       image:
-        "https://plus.unsplash.com/premium_photo-1681691912442-68c4179c530c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29uc3RydWN0aW9uJTIwc2l0ZXxlbnwwfHwwfHx8MA%3D%3D",
+        "https://www.ilo.org/sites/default/files/styles/hero_basic_desktop/public/2024-07/Qatar-construction-site-2048x900.jpg.webp?itok=gMfWycNu",
       name: "Construction",
       description:
         "Construction workers design, build, and maintain infrastructure. They handle materials and equipment to ensure projects are completed safely and on time."
@@ -29,7 +29,7 @@ export default function JobCategories() {
     {
       id: 4,
       image:
-        "https://img.freepik.com/free-photo/man-operating-industrial-machine-factory_23-2149333655.jpg",
+        "https://www.shutterstock.com/image-photo/factory-worker-programming-cnc-milling-260nw-702099169.jpg",
       name: "Machine Operation",
       description:
         "Machine operators control and maintain industrial machines. They ensure smooth and safe operation, troubleshooting any issues that arise."
@@ -37,7 +37,7 @@ export default function JobCategories() {
     {
       id: 5,
       image:
-        "https://www.ny-engineers.com/hubfs/Webp-Images/Masonry-Construction.webp",
+        "https://wellmadeconstructionengineering.wordpress.com/wp-content/uploads/2018/08/structural-masonry.jpg?w=640",
       name: "Masonry",
       description:
         "Masons work with brick and stone to create walls and buildings. They ensure structures are stable and durable through precise cutting and laying of materials."
@@ -45,7 +45,7 @@ export default function JobCategories() {
     {
       id: 6,
       image:
-        "https://qtxasset.com/quartz/qcloud1/media/image/2016-05/hotel-staff.jpg?VersionId=Vzk8oKyP3_euUBt83rNM.ixVNZSjc5NA",
+        "https://fnbreport.ph/wp-content/uploads/2018/04/chuttersnap-461239-unsplash.jpg",
       name: "Hospitality",
       description:
         "Hospitality professionals manage guest relations, food services, and hotel operations, ensuring a welcoming and comfortable experience for visitors."
@@ -53,7 +53,7 @@ export default function JobCategories() {
     {
       id: 7,
       image:
-        "https://img.freepik.com/free-photo/warehouse-worker-checking-inventory-using-tablet_23-2149333656.jpg",
+        "https://www.falconfulfillment.com/wp-content/uploads/2023/03/ff_logistics_001_misc_1920x1280.jpg",
       name: "Logistics",
       description:
         "Logistics professionals manage the flow of goods, ensuring inventory is properly tracked and products are delivered on time."
@@ -61,7 +61,7 @@ export default function JobCategories() {
     {
       id: 8,
       image:
-        "https://img.freepik.com/free-photo/customer-service-representative-working-call-center_23-2149333661.jpg",
+        "https://britishbusinessexcellenceawards.co.uk/wp-content/uploads/2024/03/shutterstock_712414813-jpg.webp",
       name: "Customer Service",
       description:
         "Customer service representatives assist customers with inquiries and complaints, ensuring satisfaction through effective communication and problem-solving."
@@ -69,7 +69,7 @@ export default function JobCategories() {
     {
       id: 9,
       image:
-        "https://adasitecompliance.com/wp-content/uploads/2022/05/Digital-Healthcare-Trends.jpg",
+        "https://www.philips.com/c-dam/corporate/innovation-and-you/global/jun-2024/bridging-gaps-in-healthcare-hero.jpg",
       name: "Healthcare",
       description:
         "Healthcare professionals diagnose, treat, and care for patients, playing a critical role in maintaining public health and well-being."
@@ -85,7 +85,7 @@ export default function JobCategories() {
     {
       id: 11,
       image:
-        "https://img.freepik.com/free-photo/pilot-cockpit-aircraft-aviation_23-2149333663.jpg",
+        "https://commercial.allianz.com/news-and-insights/news/aviation-trends-2024/_jcr_content/root/stage/stageimage.img.82.3360.jpeg/1721654537661/commercial-aviation-report-press-release-2024-stage.jpeg",
       name: "Aviation",
       description:
         "Aviation professionals ensure safe air travel by operating aircraft, managing air traffic, and assisting passengers during flights."
