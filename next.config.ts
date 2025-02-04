@@ -1,7 +1,20 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   /* config options here */
+  reactStrictMode: false,
+
+  images: {
+    // allow all domains for images
+    remotePatterns: [
+      {
+        hostname: "**",
+        protocol: "https",
+      },
+      {
+        hostname: "**",
+        protocol: "http",
+      },
+    ],
+  },
 };
 
-export default nextConfig;
+export default nextConfig;
