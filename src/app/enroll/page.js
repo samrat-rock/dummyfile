@@ -24,7 +24,7 @@ function Page() {
           </div>
         </nav>
 
-        <section className="container mx-auto bg-white rounded-lg py-5 my-5 font-poppins px-4 border-[1px]">
+        <section className="container mx-auto bg-white rounded-lg py-5 my-5 font-poppins px-4 border-[1px] flex">
           <div className="flex flex-wrap justify-between">
             <div className="flex items-center gap-4 mb-4 sm:mb-0">
               <Image
