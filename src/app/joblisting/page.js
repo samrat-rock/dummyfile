@@ -9,17 +9,16 @@ const jobListings = [
   { title: "Frontend Developer", applications: 3, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
   { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
   { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
-  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
 ];
 
 function Page() {
   return (
     <>
-      <nav className="container mx-auto bg-white shadow-lg px-6 mt-6 flex justify-between items-center font-poppins py-5 rounded-lg">
+      <nav className="container mx-auto bg-white shadow-lg px-6 mt-6 flex justify-between items-center font-poppins py-5 rounded-lg flex-wrap">
         <div className="font-bold text-2xl">
           <h3>Job Listings</h3>
         </div>
-        <div className="flex gap-6 items-center font-bold">
+        <div className="flex gap-6 items-center font-bold flex-wrap mt-3 sm:mt-0">
           <button className="bg-yellow-500 text-white font-bold px-4 py-2 rounded-lg flex gap-2 items-center">
             <MdPostAdd className="text-2xl" /> Post Job
           </button>
@@ -28,29 +27,29 @@ function Page() {
         </div>
       </nav>
 
-      <section className="container mx-auto bg-white rounded-lg py-5 mt-5 font-poppins px-6 border-[1px]">
-        <div className="flex justify-between items-center">
-          <div className="flex gap-3 items-center">
+      <section className="container mx-auto bg-white rounded-lg py-5 mt-5 font-poppins px-4 sm:px-6 border-[1px]">
+        <div className="flex flex-wrap justify-between items-center gap-3">
+          <div className="flex flex-wrap gap-3 items-center">
             <h3 className="font-medium text-lg">Job Posts</h3>
             <p className="bg-[#F9F5FF] text-[#40A6B7] rounded px-3 py-1">
               {jobListings.length} Jobs found
             </p>
           </div>
-          <div className="flex items-center border-[1px] rounded-lg bg-[#F5F5F5]">
+          <div className="flex flex-wrap items-center w-full sm:w-auto border-[1px] rounded-lg bg-[#F5F5F5]">
             <input
               type="text"
               placeholder="Search job"
-              className="w-[700px] px-4 py-2 focus:outline-none bg-transparent"
+              className="w-full sm:w-[700px] px-4 py-2 focus:outline-none bg-transparent"
             />
-            <button className="bg-[#E6F4F6] text-blue-400 px-4 py-2 rounded-r-lg flex items-center gap-2">
+            <button className="bg-[#E6F4F6] text-blue-400 px-4 py-2 rounded-r-lg flex items-center gap-2 w-full sm:w-auto">
               <CiSearch className="text-xl" /> Search
             </button>
           </div>
         </div>
       </section>
 
-      <section className="container mx-auto font-poppins bg-[#F9FAFB] py-4 px-6 rounded-lg">
-        <ul className="flex justify-between items-center font-medium text-gray-600">
+      <section className="container mx-auto font-poppins bg-[#F9FAFB] py-4 px-4 sm:px-6 rounded-lg">
+        <ul className="flex justify-between items-center font-medium text-gray-600 hidden sm:flex">
           <li className="w-[25%] flex items-center gap-2">
             <input type="checkbox" className="w-5 h-5 rounded-lg border-gray-400" />
             Job Details
@@ -65,13 +64,13 @@ function Page() {
         </ul>
       </section>
 
-      <section className="container mx-auto font-poppins border-[1px] bg-white ">
+      <section className="container mx-auto font-poppins border-[1px] bg-white">
         {jobListings.map((job, index) => (
           <div
             key={index}
-            className="flex justify-between items-center border-b-[1px] border-gray-300 py-4 px-6"
+            className="flex flex-wrap justify-between items-center border-b-[1px] border-gray-300 py-4 px-4 sm:px-6"
           >
-            <div className="w-[25%] flex items-center gap-3">
+            <div className="w-full sm:w-[25%] flex items-center gap-3">
               <input
                 type="checkbox"
                 className="w-5 h-5 rounded-lg border-gray-400"
@@ -81,49 +80,48 @@ function Page() {
                 <p className="text-sm text-gray-500">{job.applications} Applications</p>
               </div>
             </div>
-            <div className="w-[15%] flex items-center gap-3">
- 
-  <div
-  
-    className={`px-3 py-1 rounded-full flex items-center gap-2 ${
-      job.status === "Active"
-        ? "bg-green-100 text-green-600"
-        : "bg-red-100 text-red-600"
-    }`}
-    
-  >
-     <div
-    className={`w-3 h-3 rounded-full ${
-      job.status === "Active" ? "bg-green-500" : "bg-red-500"
-    }`}
-  ></div>
-    {job.status}
-  </div>
-</div>
+            <div className="w-full sm:w-[15%] flex items-center gap-3 mt-3 sm:mt-0">
+              <div
+                className={`px-3 py-1 rounded-full flex items-center gap-2 ${
+                  job.status === "Active"
+                    ? "bg-green-100 text-green-600"
+                    : "bg-red-100 text-red-600"
+                }`}
+              >
+                <div
+                  className={`w-3 h-3 rounded-full ${
+                    job.status === "Active" ? "bg-green-500" : "bg-red-500"
+                  }`}
+                ></div>
+                {job.status}
+              </div>
+            </div>
 
-           <div className="w-[10%] text-center">
-  <label className="relative inline-flex items-center cursor-pointer">
-    <input
-      type="checkbox"
-      checked={job.isActive}
-      className="sr-only peer"
-      readOnly
-    />
-    <div className="w-11 h-6 bg-gray-200 rounded-full peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 transition-colors">
-      <span
-        className="absolute left-[2px] top-[2px] w-5 h-5 bg-white rounded-full transition-transform peer-checked:translate-x-[20px]"
-      ></span>
-    </div>
-  </label>
-</div>
+            <div className="w-full sm:w-[10%] text-center mt-3 sm:mt-0">
+              <label className="relative inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={job.isActive}
+                  className="sr-only peer"
+                  readOnly
+                />
+                <div className="w-11 h-6 bg-gray-200 rounded-full peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 transition-colors">
+                  <span
+                    className="absolute left-[2px] top-[2px] w-5 h-5 bg-white rounded-full transition-transform peer-checked:translate-x-[20px]"
+                  ></span>
+                </div>
+              </label>
+            </div>
 
-            <div className="w-[15%] text-center text-sm text-gray-500">
+            <div className="w-full sm:w-[15%] text-center text-sm text-gray-500 mt-3 sm:mt-0">
               {job.postedDate}
             </div>
-            <div className="w-[15%] text-center text-sm text-gray-500">
+            <div className="w-full sm:w-[15%] text-center text-sm text-gray-500 mt-3 sm:mt-0">
               {job.expiryDate}
             </div>
-            <div className="w-[10%] text-center text-gray-600 cursor-pointer">...</div>
+            <div className="w-full sm:w-[10%] text-center text-gray-600 cursor-pointer mt-3 sm:mt-0">
+              ...
+            </div>
           </div>
         ))}
       </section>
