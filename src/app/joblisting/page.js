@@ -9,12 +9,22 @@ const jobListings = [
   { title: "Frontend Developer", applications: 3, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
   { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
   { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+
 ];
 
 function Page() {
   return (
     <>
-      <nav className="container mx-auto bg-white shadow-lg px-6 mt-6 flex justify-between items-center font-poppins py-5 rounded-lg flex-wrap">
+     <nav className="mx-auto max-w-6xl bg-white shadow-lg p-6 mt-6 flex justify-between items-center font-poppins rounded-lg flex-wrap">
         <div className="font-bold text-2xl">
           <h3>Job Listings</h3>
         </div>
@@ -27,7 +37,7 @@ function Page() {
         </div>
       </nav>
 
-      <section className="container mx-auto bg-white rounded-lg py-5 mt-5 font-poppins px-4 sm:px-6 border-[1px]">
+      <section className="mx-auto max-w-6xl bg-white rounded-lg py-5 mt-5 font-poppins p-6 border">
         <div className="flex flex-wrap justify-between items-center gap-3">
           <div className="flex flex-wrap gap-3 items-center">
             <h3 className="font-medium text-lg">Job Posts</h3>
@@ -35,7 +45,7 @@ function Page() {
               {jobListings.length} Jobs found
             </p>
           </div>
-          <div className="flex flex-wrap items-center w-full sm:w-auto border-[1px] rounded-lg bg-[#F5F5F5]">
+          <div className="flex flex-wrap items-center w-full sm:w-auto border rounded-lg bg-[#F5F5F5]">
             <input
               type="text"
               placeholder="Search job"
@@ -47,7 +57,6 @@ function Page() {
           </div>
         </div>
       </section>
-
       <section className="container mx-auto font-poppins bg-[#F9FAFB] py-4 px-4 sm:px-6 rounded-lg">
         <ul className="flex justify-between items-center font-medium text-gray-600 hidden sm:flex">
           <li className="w-[25%] flex items-center gap-2">
