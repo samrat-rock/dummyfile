@@ -1,93 +1,132 @@
-import React from 'react';
+import React from "react";
 import { FaRegBell, FaLongArrowAltDown } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { MdPostAdd } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 
 const jobListings = [
-  { title: "UI UX Designer", applications: 5, status: "Active" },
-  { title: "Frontend Developer", applications: 8, status: "Pending" },
-  { title: "Backend Developer", applications: 3, status: "Closed" },
-  { title: "Project Manager", applications: 6, status: "Active" }
+  { title: "UI UX Designer", applications: 5, status: "Expired", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: false },
+  { title: "Frontend Developer", applications: 3, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
+  { title: "Backend Developer", applications: 0, status: "Active", postedDate: "15th March, 2024", expiryDate: "15th March, 2024", isActive: true },
 ];
 
 function Page() {
   return (
     <>
-      <nav className="container mx-auto bg-white shadow-lg px-4 mt-6 flex justify-between font-poppins py-5 items-center rounded-lg">
-        <div className="pl-4 font-bold text-2xl">
+      <nav className="container mx-auto bg-white shadow-lg px-6 mt-6 flex justify-between items-center font-poppins py-5 rounded-lg">
+        <div className="font-bold text-2xl">
           <h3>Job Listings</h3>
         </div>
-        <div className="pr-4 flex gap-8 items-center font-bold">
-          <button className='bg-yellow-500 text-white font-bold p-3 rounded-lg flex gap-2'>
-            <MdPostAdd className='font-bold text-2xl'/> Post Job
+        <div className="flex gap-6 items-center font-bold">
+          <button className="bg-yellow-500 text-white font-bold px-4 py-2 rounded-lg flex gap-2 items-center">
+            <MdPostAdd className="text-2xl" /> Post Job
           </button>
-          <span className="pr-5 text-2xl">
-            <FaRegBell />
-          </span>
-          <span className="text-3xl">
-            <CgProfile />
-          </span>
+          <FaRegBell className="text-2xl cursor-pointer" />
+          <CgProfile className="text-3xl cursor-pointer" />
         </div>
       </nav>
 
-      <section className="container mx-auto bg-white rounded-lg py-5 my-5 font-poppins px-4 border-[1px]">
-        <div className='flex justify-around items-center'>
-          <div className='flex gap-3'>
-            <h3>Job Posts</h3>
-            <p className='bg-[#F9F5FF] text-[#40A6B7] rounded px-3'>{jobListings.length} Jobs found</p>
+      <section className="container mx-auto bg-white rounded-lg py-5 mt-5 font-poppins px-6 border-[1px]">
+        <div className="flex justify-between items-center">
+          <div className="flex gap-3 items-center">
+            <h3 className="font-medium text-lg">Job Posts</h3>
+            <p className="bg-[#F9F5FF] text-[#40A6B7] rounded px-3 py-1">
+              {jobListings.length} Jobs found
+            </p>
           </div>
-
-          <div className='border-[1px] rounded-xl py-2 flex bg-[#F5F5F5]'>
-            <input 
-              type='text'
-              placeholder='Search job'
-              className='w-[900px] pl-5 focus:outline-none bg-transparent' 
+          <div className="flex items-center border-[1px] rounded-lg bg-[#F5F5F5]">
+            <input
+              type="text"
+              placeholder="Search job"
+              className="w-[700px] px-4 py-2 focus:outline-none bg-transparent"
             />
-            <button className='bg-[#E6F4F6] text-blue-400 px-4 mr-3 rounded-lg flex gap-3 items-center text-2xl'>
-              <CiSearch/> Search
+            <button className="bg-[#E6F4F6] text-blue-400 px-4 py-2 rounded-r-lg flex items-center gap-2">
+              <CiSearch className="text-xl" /> Search
             </button>
           </div>
         </div>
       </section>
 
-     
-
-    <main>
-
-    <section className='bg-[#F9FAFB] container mx-auto font-poppins'>
-        <div className='py-4 px-10'>
-          <ul className='flex justify-between items-center'>
-            <li className='flex items-center'>
-              <input type="checkbox" className="mr-5 w-5 h-5 rounded-lg appearance-none border-2 border-gray-400 checked:bg-blue-500 checked:border-blue-500" />
-              Job Details
-            </li>
-            <li className='flex items-center'>Status <FaLongArrowAltDown /></li>
-            <li className='flex items-center'>Active <FaLongArrowAltDown /></li>
-            <li className='flex items-center'>Posted Date <FaLongArrowAltDown /></li>
-            <li className='flex items-center'>Expiry Date <FaLongArrowAltDown /></li>
-            <li className='flex items-center'>Action <FaLongArrowAltDown /></li>
-          </ul>
-        </div>
+      <section className="container mx-auto font-poppins bg-[#F9FAFB] py-4 px-6 rounded-lg">
+        <ul className="flex justify-between items-center font-medium text-gray-600">
+          <li className="w-[25%] flex items-center gap-2">
+            <input type="checkbox" className="w-5 h-5 rounded-lg border-gray-400" />
+            Job Details
+          </li>
+          <li className="w-[15%] flex items-center gap-2">
+            Status <FaLongArrowAltDown />
+          </li>
+          <li className="w-[10%] text-center">Active</li>
+          <li className="w-[15%] text-center">Posted Date</li>
+          <li className="w-[15%] text-center">Expiry Date</li>
+          <li className="w-[10%] text-center">Action</li>
+        </ul>
       </section>
-    <section className="container mx-auto font-poppins border-[1px] ">
-  <div className=" ">
-    {jobListings.map((job, index) => (
-      <div key={index} className="my-6 border-b-[1px] border-gray-400 pb-7  w-full">
-        <h3 className="text-xl flex items-center pl-9">
-          <input 
-            type="checkbox" 
-            className="mr-5 w-5 h-5 rounded-lg appearance-none border-2 border-gray-400 checked:bg-blue-500 checked:border-blue-500" 
-          />
-          {job.title}
-        </h3>
-        <p className="text-sm text-gray-500 pl-20">{job.applications} applications found</p>
-      </div>
-    ))}
-  </div>
-</section>
-    </main>
 
+      <section className="container mx-auto font-poppins border-[1px] bg-white ">
+        {jobListings.map((job, index) => (
+          <div
+            key={index}
+            className="flex justify-between items-center border-b-[1px] border-gray-300 py-4 px-6"
+          >
+            <div className="w-[25%] flex items-center gap-3">
+              <input
+                type="checkbox"
+                className="w-5 h-5 rounded-lg border-gray-400"
+              />
+              <div>
+                <h3 className="text-lg font-medium">{job.title}</h3>
+                <p className="text-sm text-gray-500">{job.applications} Applications</p>
+              </div>
+            </div>
+            <div className="w-[15%] flex items-center gap-3">
+ 
+  <div
+  
+    className={`px-3 py-1 rounded-full flex items-center gap-2 ${
+      job.status === "Active"
+        ? "bg-green-100 text-green-600"
+        : "bg-red-100 text-red-600"
+    }`}
+    
+  >
+     <div
+    className={`w-3 h-3 rounded-full ${
+      job.status === "Active" ? "bg-green-500" : "bg-red-500"
+    }`}
+  ></div>
+    {job.status}
+  </div>
+</div>
+
+           <div className="w-[10%] text-center">
+  <label className="relative inline-flex items-center cursor-pointer">
+    <input
+      type="checkbox"
+      checked={job.isActive}
+      className="sr-only peer"
+      readOnly
+    />
+    <div className="w-11 h-6 bg-gray-200 rounded-full peer-checked:bg-blue-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 transition-colors">
+      <span
+        className="absolute left-[2px] top-[2px] w-5 h-5 bg-white rounded-full transition-transform peer-checked:translate-x-[20px]"
+      ></span>
+    </div>
+  </label>
+</div>
+
+            <div className="w-[15%] text-center text-sm text-gray-500">
+              {job.postedDate}
+            </div>
+            <div className="w-[15%] text-center text-sm text-gray-500">
+              {job.expiryDate}
+            </div>
+            <div className="w-[10%] text-center text-gray-600 cursor-pointer">...</div>
+          </div>
+        ))}
+      </section>
     </>
   );
 }
